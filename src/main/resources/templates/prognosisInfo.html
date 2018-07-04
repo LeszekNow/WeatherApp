@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title> Prognosis Weather: </title>
+
+</head>
+<body>
+
+<br/>
+
+<div style="text-align: center">
+    <br/>
+    <br/>
+
+    <form action="/prognosis" method="post">
+        <input th:name="city" placeholder="Enter city">
+        <input type="submit" value="Show">
+    </form>
+
+    <br/>
+
+    <h1> Weather prognosis: </h1>
+
+    <br/>
+
+    <table align="center" border="1" style="background-color: aliceblue">
+        <tr style="background-color: orange">
+            <td>Date and Time: </td>
+            <td>Temperature: </td>
+            <td>Cloudiness:</td>
+            <td>Pressure:</td>
+            <td>Wind speed:</td>
+            <td>Humidity:</td>
+        </tr>
+
+        <tr>
+            <td th:if="${dt1} != null" th:text="${dt1}" ></td>
+            <td th:if="${temp1} != null" th:text="${temp1}"></td>
+            <td th:if="${cloud1} != null" th:text="${cloud1}"></td>
+            <td th:if="${press1} != null" th:text="${press1}"></td>
+            <td th:if="${winds1} != null" th:text="${winds1}"></td>
+            <td th:if="${humid1} != null" th:text="${humid1}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt2} != null" th:text="${dt2}"></td>
+            <td th:if="${temp2} != null" th:text="${temp2}"></td>
+            <td th:if="${cloud2} != null" th:text="${cloud2}"></td>
+            <td th:if="${press2} != null" th:text="${press2}"></td>
+            <td th:if="${winds2} != null" th:text="${winds2}"></td>
+            <td th:if="${humid2} != null" th:text="${humid2}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt3} != null" th:text="${dt3}"></td>
+            <td th:if="${temp3} != null" th:text="${temp3}"></td>
+            <td th:if="${cloud3} != null" th:text="${cloud3}"></td>
+            <td th:if="${press3} != null" th:text="${press3}"></td>
+            <td th:if="${winds3} != null" th:text="${winds3}"></td>
+            <td th:if="${humid3} != null" th:text="${humid3}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt4} != null" th:text="${dt4}"></td>
+            <td th:if="${temp4} != null" th:text="${temp4}"></td>
+            <td th:if="${cloud4} != null" th:text="${cloud4}"></td>
+            <td th:if="${press4} != null" th:text="${press4}"></td>
+            <td th:if="${winds4} != null" th:text="${winds4}"></td>
+            <td th:if="${humid4} != null" th:text="${humid4}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt5} != null" th:text="${dt5}"></td>
+            <td th:if="${temp5} != null" th:text="${temp5}"></td>
+            <td th:if="${cloud5} != null" th:text="${cloud5}"></td>
+            <td th:if="${press5} != null" th:text="${press5}"></td>
+            <td th:if="${winds5} != null" th:text="${winds5}"></td>
+            <td th:if="${humid5} != null" th:text="${humid5}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt6} != null" th:text="${dt6}"></td>
+            <td th:if="${temp6} != null" th:text="${temp6}"></td>
+            <td th:if="${cloud6} != null" th:text="${cloud6}"></td>
+            <td th:if="${press6} != null" th:text="${press6}"></td>
+            <td th:if="${winds6} != null" th:text="${winds6}"></td>
+            <td th:if="${humid6} != null" th:text="${humid6}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt7} != null" th:text="${dt7}"></td>
+            <td th:if="${temp7} != null" th:text="${temp7}"></td>
+            <td th:if="${cloud7} != null" th:text="${cloud7}"></td>
+            <td th:if="${press7} != null" th:text="${press7}"></td>
+            <td th:if="${winds7} != null" th:text="${winds7}"></td>
+            <td th:if="${humid7} != null" th:text="${humid7}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt8} != null" th:text="${dt8}"></td>
+            <td th:if="${temp8} != null" th:text="${temp8}"></td>
+            <td th:if="${cloud8} != null" th:text="${cloud8}"></td>
+            <td th:if="${press8} != null" th:text="${press8}"></td>
+            <td th:if="${winds8} != null" th:text="${winds8}"></td>
+            <td th:if="${humid8} != null" th:text="${humid8}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt9} != null" th:text="${dt9}"></td>
+            <td th:if="${temp9} != null" th:text="${temp9}"></td>
+            <td th:if="${cloud9} != null" th:text="${cloud9}"></td>
+            <td th:if="${press9} != null" th:text="${press9}"></td>
+            <td th:if="${winds9} != null" th:text="${winds9}"></td>
+            <td th:if="${humid9} != null" th:text="${humid9}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt10} != null" th:text="${dt10}"></td>
+            <td th:if="${temp10} != null" th:text="${temp10}"></td>
+            <td th:if="${cloud10} != null" th:text="${cloud10}"></td>
+            <td th:if="${press10} != null" th:text="${press10}"></td>
+            <td th:if="${winds10} != null" th:text="${winds10}"></td>
+            <td th:if="${humid10} != null" th:text="${humid10}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt11} != null" th:text="${dt11}"></td>
+            <td th:if="${temp11} != null" th:text="${temp11}"></td>
+            <td th:if="${cloud11} != null" th:text="${cloud11}"></td>
+            <td th:if="${press11} != null" th:text="${press11}"></td>
+            <td th:if="${winds11} != null" th:text="${winds11}"></td>
+            <td th:if="${humid11} != null" th:text="${humid11}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt12} != null" th:text="${dt12}"></td>
+            <td th:if="${temp12} != null" th:text="${temp12}"></td>
+            <td th:if="${cloud12} != null" th:text="${cloud12}"></td>
+            <td th:if="${press12} != null" th:text="${press12}"></td>
+            <td th:if="${winds12} != null" th:text="${winds12}"></td>
+            <td th:if="${humid12} != null" th:text="${humid12}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt13} != null" th:text="${dt13}"></td>
+            <td th:if="${temp13} != null" th:text="${temp13}"></td>
+            <td th:if="${cloud13} != null" th:text="${cloud13}"></td>
+            <td th:if="${press13} != null" th:text="${press13}"></td>
+            <td th:if="${winds13} != null" th:text="${winds13}"></td>
+            <td th:if="${humid13} != null" th:text="${humid13}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt14} != null" th:text="${dt14}"></td>
+            <td th:if="${temp14} != null" th:text="${temp14}"></td>
+            <td th:if="${cloud14} != null" th:text="${cloud14}"></td>
+            <td th:if="${press14} != null" th:text="${press14}"></td>
+            <td th:if="${winds14} != null" th:text="${winds14}"></td>
+            <td th:if="${humid14} != null" th:text="${humid14}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt15} != null" th:text="${dt15}"></td>
+            <td th:if="${temp15} != null" th:text="${temp15}"></td>
+            <td th:if="${cloud15} != null" th:text="${cloud15}"></td>
+            <td th:if="${press15} != null" th:text="${press15}"></td>
+            <td th:if="${winds15} != null" th:text="${winds15}"></td>
+            <td th:if="${humid15} != null" th:text="${humid15}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt16} != null" th:text="${dt16}"></td>
+            <td th:if="${temp16} != null" th:text="${temp16}"></td>
+            <td th:if="${cloud16} != null" th:text="${cloud16}"></td>
+            <td th:if="${press16} != null" th:text="${press16}"></td>
+            <td th:if="${winds16} != null" th:text="${winds16}"></td>
+            <td th:if="${humid16} != null" th:text="${humid16}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt17} != null" th:text="${dt17}"></td>
+            <td th:if="${temp17} != null" th:text="${temp17}"></td>
+            <td th:if="${cloud17} != null" th:text="${cloud17}"></td>
+            <td th:if="${press17} != null" th:text="${press17}"></td>
+            <td th:if="${winds17} != null" th:text="${winds17}"></td>
+            <td th:if="${humid17} != null" th:text="${humid17}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt18} != null" th:text="${dt18}"></td>
+            <td th:if="${temp18} != null" th:text="${temp18}"></td>
+            <td th:if="${cloud18} != null" th:text="${cloud18}"></td>
+            <td th:if="${press18} != null" th:text="${press18}"></td>
+            <td th:if="${winds18} != null" th:text="${winds18}"></td>
+            <td th:if="${humid18} != null" th:text="${humid18}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt19} != null" th:text="${dt19}"></td>
+            <td th:if="${temp19} != null" th:text="${temp19}"></td>
+            <td th:if="${cloud19} != null" th:text="${cloud19}"></td>
+            <td th:if="${press19} != null" th:text="${press19}"></td>
+            <td th:if="${winds19} != null" th:text="${winds19}"></td>
+            <td th:if="${humid19} != null" th:text="${humid19}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt20} != null" th:text="${dt20}"></td>
+            <td th:if="${temp20} != null" th:text="${temp20}"></td>
+            <td th:if="${cloud20} != null" th:text="${cloud20}"></td>
+            <td th:if="${press20} != null" th:text="${press20}"></td>
+            <td th:if="${winds20} != null" th:text="${winds20}"></td>
+            <td th:if="${humid20} != null" th:text="${humid20}"></td>
+        </tr>
+
+        <tr>
+            <td th:if="${dt21} != null" th:text="${dt21}"></td>
+            <td th:if="${temp21} != null" th:text="${temp21}"></td>
+            <td th:if="${cloud21} != null" th:text="${cloud21}"></td>
+            <td th:if="${press21} != null" th:text="${press21}"></td>
+            <td th:if="${winds21} != null" th:text="${winds21}"></td>
+            <td th:if="${humid21} != null" th:text="${humid21}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt22} != null" th:text="${dt22}"></td>
+            <td th:if="${temp22} != null" th:text="${temp22}"></td>
+            <td th:if="${cloud22} != null" th:text="${cloud22}"></td>
+            <td th:if="${press22} != null" th:text="${press22}"></td>
+            <td th:if="${winds22} != null" th:text="${winds22}"></td>
+            <td th:if="${humid22} != null" th:text="${humid22}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt23} != null" th:text="${dt23}"></td>
+            <td th:if="${temp23} != null" th:text="${temp23}"></td>
+            <td th:if="${cloud23} != null" th:text="${cloud23}"></td>
+            <td th:if="${press23} != null" th:text="${press23}"></td>
+            <td th:if="${winds23} != null" th:text="${winds23}"></td>
+            <td th:if="${humid23} != null" th:text="${humid23}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt24} != null" th:text="${dt24}"></td>
+            <td th:if="${temp24} != null" th:text="${temp24}"></td>
+            <td th:if="${cloud24} != null" th:text="${cloud24}"></td>
+            <td th:if="${press24} != null" th:text="${press24}"></td>
+            <td th:if="${winds24} != null" th:text="${winds24}"></td>
+            <td th:if="${humid24} != null" th:text="${humid24}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt25} != null" th:text="${dt25}"></td>
+            <td th:if="${temp25} != null" th:text="${temp25}"></td>
+            <td th:if="${cloud25} != null" th:text="${cloud25}"></td>
+            <td th:if="${press25} != null" th:text="${press25}"></td>
+            <td th:if="${winds25} != null" th:text="${winds25}"></td>
+            <td th:if="${humid25} != null" th:text="${humid25}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt26} != null" th:text="${dt26}"></td>
+            <td th:if="${temp26} != null" th:text="${temp26}"></td>
+            <td th:if="${cloud26} != null" th:text="${cloud26}"></td>
+            <td th:if="${press26} != null" th:text="${press26}"></td>
+            <td th:if="${winds26} != null" th:text="${winds26}"></td>
+            <td th:if="${humid26} != null" th:text="${humid26}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt27} != null" th:text="${dt27}"></td>
+            <td th:if="${temp27} != null" th:text="${temp27}"></td>
+            <td th:if="${cloud27} != null" th:text="${cloud27}"></td>
+            <td th:if="${press27} != null" th:text="${press27}"></td>
+            <td th:if="${winds27} != null" th:text="${winds27}"></td>
+            <td th:if="${humid27} != null" th:text="${humid27}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt28} != null" th:text="${dt28}"></td>
+            <td th:if="${temp28} != null" th:text="${temp28}"></td>
+            <td th:if="${cloud28} != null" th:text="${cloud28}"></td>
+            <td th:if="${press28} != null" th:text="${press28}"></td>
+            <td th:if="${winds28} != null" th:text="${winds28}"></td>
+            <td th:if="${humid28} != null" th:text="${humid28}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt29} != null" th:text="${dt29}"></td>
+            <td th:if="${temp29} != null" th:text="${temp29}"></td>
+            <td th:if="${cloud29} != null" th:text="${cloud29}"></td>
+            <td th:if="${press29} != null" th:text="${press29}"></td>
+            <td th:if="${winds29} != null" th:text="${winds29}"></td>
+            <td th:if="${humid29} != null" th:text="${humid29}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt30} != null" th:text="${dt30}"></td>
+            <td th:if="${temp30} != null" th:text="${temp30}"></td>
+            <td th:if="${cloud30} != null" th:text="${cloud30}"></td>
+            <td th:if="${press30} != null" th:text="${press30}"></td>
+            <td th:if="${winds30} != null" th:text="${winds30}"></td>
+            <td th:if="${humid30} != null" th:text="${humid30}"></td>
+        </tr>
+
+        <tr>
+            <td th:if="${dt31} != null" th:text="${dt31}"></td>
+            <td th:if="${temp31} != null" th:text="${temp31}"></td>
+            <td th:if="${cloud31} != null" th:text="${cloud31}"></td>
+            <td th:if="${press31} != null" th:text="${press31}"></td>
+            <td th:if="${winds31} != null" th:text="${winds31}"></td>
+            <td th:if="${humid31} != null" th:text="${humid31}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt32} != null" th:text="${dt32}"></td>
+            <td th:if="${temp32} != null" th:text="${temp32}"></td>
+            <td th:if="${cloud32} != null" th:text="${cloud32}"></td>
+            <td th:if="${press32} != null" th:text="${press32}"></td>
+            <td th:if="${winds32} != null" th:text="${winds32}"></td>
+            <td th:if="${humid32} != null" th:text="${humid32}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt33} != null" th:text="${dt33}"></td>
+            <td th:if="${temp33} != null" th:text="${temp33}"></td>
+            <td th:if="${cloud33} != null" th:text="${cloud33}"></td>
+            <td th:if="${press33} != null" th:text="${press33}"></td>
+            <td th:if="${winds33} != null" th:text="${winds33}"></td>
+            <td th:if="${humid33} != null" th:text="${humid33}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt34} != null" th:text="${dt34}"></td>
+            <td th:if="${temp34} != null" th:text="${temp34}"></td>
+            <td th:if="${cloud34} != null" th:text="${cloud34}"></td>
+            <td th:if="${press34} != null" th:text="${press34}"></td>
+            <td th:if="${winds34} != null" th:text="${winds34}"></td>
+            <td th:if="${humid34} != null" th:text="${humid34}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt35} != null" th:text="${dt35}"></td>
+            <td th:if="${temp35} != null" th:text="${temp35}"></td>
+            <td th:if="${cloud35} != null" th:text="${cloud35}"></td>
+            <td th:if="${press35} != null" th:text="${press35}"></td>
+            <td th:if="${winds35} != null" th:text="${winds35}"></td>
+            <td th:if="${humid35} != null" th:text="${humid35}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt36} != null" th:text="${dt36}"></td>
+            <td th:if="${temp36} != null" th:text="${temp36}"></td>
+            <td th:if="${cloud36} != null" th:text="${cloud36}"></td>
+            <td th:if="${press36} != null" th:text="${press36}"></td>
+            <td th:if="${winds36} != null" th:text="${winds36}"></td>
+            <td th:if="${humid36} != null" th:text="${humid36}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt37} != null" th:text="${dt37}"></td>
+            <td th:if="${temp37} != null" th:text="${temp37}"></td>
+            <td th:if="${cloud37} != null" th:text="${cloud37}"></td>
+            <td th:if="${press37} != null" th:text="${press37}"></td>
+            <td th:if="${winds37} != null" th:text="${winds37}"></td>
+            <td th:if="${humid37} != null" th:text="${humid37}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt38} != null" th:text="${dt38}"></td>
+            <td th:if="${temp38} != null" th:text="${temp38}"></td>
+            <td th:if="${cloud38} != null" th:text="${cloud38}"></td>
+            <td th:if="${press38} != null" th:text="${press38}"></td>
+            <td th:if="${winds38} != null" th:text="${winds38}"></td>
+            <td th:if="${humid38} != null" th:text="${humid38}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt39} != null" th:text="${dt39}"></td>
+            <td th:if="${temp39} != null" th:text="${temp39}"></td>
+            <td th:if="${cloud39} != null" th:text="${cloud39}"></td>
+            <td th:if="${press39} != null" th:text="${press39}"></td>
+            <td th:if="${winds39} != null" th:text="${winds39}"></td>
+            <td th:if="${humid39} != null" th:text="${humid39}"></td>
+        </tr>
+        <tr>
+            <td th:if="${dt40} != null" th:text="${dt40}"></td>
+            <td th:if="${temp40} != null" th:text="${temp40}"></td>
+            <td th:if="${cloud40} != null" th:text="${cloud40}"></td>
+            <td th:if="${press40} != null" th:text="${press40}"></td>
+            <td th:if="${winds40} != null" th:text="${winds40}"></td>
+            <td th:if="${humid40} != null" th:text="${humid40}"></td>
+        </tr>
+        <tr style="background-color: orange">
+            <td> dd/mm/yy </td>
+            <td> &degC </td>
+            <td> % </td>
+            <td> hPa </td>
+            <td> km/h </td>
+            <td> % </td>
+        </tr>
+
+    </table>
+
+    <br/>
+
+    <a href="/"> Current weather </a>
+
+</div>
+
+</body>
+</html>
